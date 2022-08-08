@@ -1,0 +1,274 @@
+html {
+	font-size: 16px;
+}
+body {
+	font-size: 1rem;
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	max-width: 62%;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.9rem;
+}
+h2 {
+	font-size: 1.1rem;
+}
+h3 {
+	font-size: .8rem;
+}
+
+p {
+	font-size: .9rem;
+	line-height: 1.3rem;
+    padding: 0 1.9rem;
+}
+
+/*The widths are in a percentage!*/
+header {
+	width: 100%;
+	height: 15%;
+	border-bottom: 3px solid #77a466;
+	display: flex;
+	justify-content: space-between;
+}
+header h1 {
+	margin: 0;
+	padding: 2.5rem 0;
+}
+header h1 span {
+	color: #77a466;
+}
+header nav {
+	padding: 2.8rem 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: .9rem;
+	padding: 0 .6rem;
+	list-style-type: none;	
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+.top-section {
+	width: 100%;
+	height: 50%;
+}
+.main-image {
+	width: 100%;
+	height: 65%;
+}
+.main-image img {
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #77a466;
+}
+.main-title {
+	height: 35%;
+	
+}
+.main-title h2 {
+	padding: .3rem 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+.bottom-section {
+	width: 100%;
+	height: 30%;
+	display: flex;
+}
+.section-one,
+.section-two,
+.section-three {
+	width: 33%;
+	height: auto;
+	border-top: 1px solid #eee;
+}
+.section-one h3 {
+	padding: .8rem 0;
+}
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+.section-two h3,
+.section-three h3 {
+	padding: .8rem;
+}
+.section-two p,
+.section-three p {
+	padding-left: .8rem;
+}
+.menu {
+	list-style: none;
+	padding: 0;
+}
+.menu li {
+	padding: .7rem 0;
+	color:#77a466;
+}
+.reviews {
+	color: #333;
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+.address {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+/*The widths are in a percentage!*/
+footer {
+	width: 100%;
+	height: 5%;
+	border-top: 3px solid #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: .9rem;
+}
+
+/**************************************************************************/
+@media (max-width: 659px) {	
+	body {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center; 
+	}
+	.container {
+		max-width: 90%;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	header h1 {
+		border-bottom: 3px solid #77a466;
+		width: 100%;
+		text-align: center;
+		padding: 2.5rem 0 1rem 0;
+	}
+	header nav {
+		padding-top: 1.8rem;
+		padding-bottom: 0;
+	}
+	header nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	header nav ul li {
+		padding-bottom: 1.8rem;
+		display: flex;
+		justify-content: center;
+	}
+	.bottom-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.section-one, 
+	.section-two, 
+	.section-three {
+		width: 100%;
+		border-left: none;
+		border-right: none;
+		padding-top: .7rem;
+		padding-bottom: .7rem;
+	}
+	.section-two h3 {
+		padding: 0;
+	}
+	.section-two p {
+		padding: 0;
+	}
+	.section-three p {
+		padding: 0;
+	}
+	.section-three h3 {
+		padding: 0;
+	}
+}
+
+@media (min-width: 660px) and (max-width: 768px) {
+	body {
+	  display: flex;
+	  justify-content: center;
+	  align-items: center; 
+	}
+	.container {
+		max-width: 90%;
+	}
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	header h1 {
+		border-bottom: 3px solid #77a466;
+		width: 100%;
+		text-align: center;
+		padding: 2.5rem 0 1rem 0;
+	}
+	header nav {
+		padding-top: 1.8rem;
+		padding-bottom: 0;
+	}
+	header nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+	header nav ul li {
+		padding-bottom: 1.8rem;
+		display: flex;
+		justify-content: center;
+	}
+	.section-two h3 {
+		padding-top: 0;
+		padding-left: 1rem;
+	}
+	.section-two p {
+		padding-top: 0;
+		padding-left: 1rem;
+	}
+	.section-three p {
+		padding-top: 0;
+		padding-left: 1rem;
+	}
+	.section-three h3 {
+		padding-top: 0;
+		padding-left: 1rem;
+	}
+}
